@@ -1,7 +1,8 @@
 from django.urls import path
-from . import views
+from .views import register_user, success, check_permissions
 
 urlpatterns = [
-    
-    # Other routes...
+    path('register/', register_user, name='register'),
+    path('success/', success, name='success'),
+    path('check-permissions/', check_permissions, name='check_permissions'),
 ]
