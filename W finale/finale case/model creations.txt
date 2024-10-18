@@ -1,0 +1,9 @@
+lets say about permissions and properties of models and how they are related(relationships)
+in staff, there will be inherited properties of CustomUser(AbstratUser), with hire_date and with the permission to CRUD teacher, classes, subjects, students, fees, parents for now.
+in teachers, there will be inherited properties of CustomUser(AbstractUser), with hire_date, and main subject with permissions to CRUD attendance, exam, grade, and class schedule or time table for now.
+in classes, there will be properties such as assigned teacher, students, attendance,exams, grade, and class schedule for now
+in students there will be inherited properties of CustomUser(AbstractUser), with class, attendance,exam(grade), class schedule for now
+for parents, there will be inherited properties of CustomUser(AbstractUser) with students as child for now, for what they see will be the same as students in views later when we go to ui and views.
+for exam, there will be properties of class, students, grade and date for now.
+for attendance, there will be properties of date, class, students and teachers for now.
+they are decided just for now, maybe later we need to change them as needed. lets update the models as mentioned above and how will you improve those models.
